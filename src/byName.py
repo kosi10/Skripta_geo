@@ -17,7 +17,7 @@ for item in file1["features"]:
     #print(name1)
     names2 = [d["itemLabel"] for d in file2]
 
-    best = get_close_matches(name1, names2, n=1, cutoff=0.45)
+    best = get_close_matches(name1, names2, n=1, cutoff=0.50) # cutoff je natancnost
     nameMatches.append(best)
 
 with open("json/nameCombine.json", "w", encoding="utf-8") as f:
